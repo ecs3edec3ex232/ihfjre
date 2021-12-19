@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Chat app page3 </title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="Chat_app_page.js"></script> 
+    </head>
+
+    <body style="background-image: url(b.jpeg);">
+        <div class="container">
+    <button id="logout_b" class=" glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button></div>
+
+    <center>
+   <h1 style="color: white;">
+    Chat App
+    <sup>
+<img src="1.jpeg" class="logo" style="width: 2.5cm; height: 2.5cm; border-radius: 75px;">
+    </sup>
+</h1>
+</center>
+
+<br>
+<br>
+
+    <center>
+    <div id="output" style="text-align: left;margin-bottom: 70px; padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;"></div>
+</center>
+
+
+<center>
+	<div class="input_div_message_page" style="position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);">
+		<label>Send:</label>
+        <input id="msg" class="form-control" type="text" placeholder="Type here">
+		<button class="btn btn-success" onclick="send()" >Send</button>
+	</div>
+</center>
+
+</body>
+</html>
